@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calendar 1982</title>
+<style>
+
+body {
+  background: linear-gradient(120deg, hwb(309 89% 1%), #d0e8f2); 
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.calendar {
+  position: relative;
+  width: 320px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2); 
+  overflow: hidden;
+  padding: 15px;
+  transition: transform 0.2s ease, box-shadow 0.3s ease, filter 0.2s ease;
+  cursor: pointer;
+ 
+}
+
+
+.calendar:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25); 
+}
+.calendar:active {
+  transform: translateY(2px) scale(0.97);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15); 
+  filter: brightness(0.95);
+}
+
+.calendar-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.month {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 250px;
+  padding: 10px;
+  background-color: #fdfdfd;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+.month-header {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 0;
+  color: #fff;
+  background: red; 
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2); 
+  letter-spacing: 1px;
+}
+
+.month-title {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+
+.weekdays, .days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  gap: 5px;
+}
+
+.weekdays div {
+  font-weight: 600;
+  font-size: 14px;
+  color: black;
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+.days div {
+  padding: 10px 0;
+  border-radius: 6px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
+  box-sizing: border-box;
+}
+
+.days .sunday {
+  color: red;
+  font-weight: 700;
+}
+
+  .holiday {
+  color: red !important;  
+  font-weight: bold;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.holiday a {
+  color: red;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: inherit;
+}
+
+.holiday a:hover {
+  text-decoration: underline;
+  
+}
+
+.holiday:hover {
+  background-color: #ffe0b2;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .calendar {
+    transition: none !important;
+  }
+}
+
+.weekdays div:nth-child(1),
+.days div:nth-child(7n+1) {
+  color: red;
+  font-weight: bold;
+}
+
+.days div:nth-child(7n) {
+  color: blue;
+  font-weight: bold;
+}
+
+.holiday {
+  color: red !important;  
+  font-weight: bold;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.holiday a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.holiday:hover {
+  color: violet; 
+  background-color: transparent;
+}
+
+</style>
+</head>
+<body>
+
+<!-- JANUARY 1982 -->
+<div class="calendar" tabindex="0">
+  <div class="month-header">JANUARY 1982</div>
+  <div class="weekdays">
+    <div>SUN</div><div>MON</div><div>TUE</div><div>WED</div><div>THU</div><div>FRI</div><div>SAT</div>
+  </div>
+  <div class="days">
+    <div></div><div></div><div></div><div></div><div></div>
+    <div class="holiday"title="New Year 1982">
+      <a href="https://www.calendar-12.com/holidays/new_year/1982" target="_blank">1</a>
+    </div>
+    <div>2</div>
+    <div class="sunday">3</div>
+    <div>4</div><div>5</div><div>6</div><div>7</div><div>8</div><div>9</div>
+    <div class="sunday">10</div>
+    <div>11</div><div>12</div><div>13</div><div>14</div><div>15</div><div>16</div>
+    <div class="sunday">17</div>
+    <div>18</div><div>19</div><div>20</div><div>21</div><div>22</div><div>23</div>
+    <div class="sunday">24</div>
+    <div>25</div><div>26</div><div>27</div><div>28</div><div>29</div><div>30</div>
+    <div class="sunday">31</div>
+  </div>
+</div>
+
+<!-- FEBRUARY 1982 -->
+<div class="calendar february" tabindex="0">
+  <div class="month-header">FEBRUARY 1982</div>
+  <div class="weekdays">
+   <div>SUN</div><div>MON</div><div>TUE</div><div>WED</div><div>THU</div><div>FRI</div><div>SAT</div>
+  </div>
+  <div class="days">
+    <div></div><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div>
+    <div class="sunday">7</div>
+    <div>8</div><div>9</div><div>10</div><div>11</div><div>12</div><div>13</div>
+    <div class="sunday">14</div>
+     <div>15</div><div>16</div><div>17</div><div>18</div><div>19</div><div>20</div>
+    <div class="sunday">21</div>
+    <div>22</div><div>23</div><div>24</div><div>25</div><div>26</div><div>27</div>
+    <div class="sunday">28</div>
+  </div>
+</div>
+
+
+<!-- MARCH 1982 -->
+<div class="calendar" tabindex="0">
+  <div class="month-header">MARCH 1982</div>
+  <div class="weekdays">
+    <div class="sunday">SUN</div>
+    <div>MON</div>
+    <div>TUE</div>
+    <div>WED</div>
+    <div>THU</div>
+    <div>FRI</div>
+    <div>SAT</div>
+  </div>
+  <div class="days">
+    <div></div><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div>
+    <div class="sunday">7</div>
+    <div>8</div><div>9</div><div>10</div><div>11</div><div>12</div><div>13</div>
+    <div class="sunday">14</div>
+    <div>15</div><div>16</div><div>17</div><div>18</div><div>19</div><div>20</div>
+    <div class="sunday">21</div>
+    <div>22</div><div>23</div><div>24</div><div>25</div><div>26</div><div>27</div>
+    <div class="sunday">28</div>
+    <div>29</div><div>30</div><div>31</div>
+  </div>
+</div>
+
+<!-- APRIL -->
+<div class="calendar" tabindex="0">
+  <div class="month-header">APRIL 1982</div>
+  <div class="days"></div>
+  <div class="weekdays">
+    <div>SUN</div><div>MON</div><div>TUE</div><div>WED</div><div>THU</div><div>FRI</div><div>SAT</div>
+  </div>
+  <div class="days">
+    <div></div><div></div><div></div><div></div><div>1</div><div>2</div><div>3</div>
+    <div class="sunday">4</div>
+    <div>5</div><div>6</div><div>7</div>
+    <div class="holiday" title="MAUNDY THURSDAY 1982">
+      <a href="https://www.calendar-12.com/holidays/maundy_thursday/1982" target="_blank">8</a>
+    </div>
+    <div class="holiday" title="GOOD FRIDAY 1982">
+      <a href="https://www.calendar-12.com/holidays/good_friday/1982" target="_blank">9</a>
+    </div>
+    <div class="holiday" title="Holy Saturday 1982">
+      <a href="https://en.wikipedia.org/wiki/Holy_Saturday" target="_blank">10</a>
+    </div>
+    <div class="holiday" title="Easter Sunday 1982">
+      <a href="https://www.calendar-12.com/holidays/easter/1982" target="_blank">11</a>
+    </div>
+    <div>12</div>
+    <div>13</div><div>14</div><div>15</div><div>16</div><div>17</div>
+    <div class="sunday">18</div>
+    <div>19</div><div>20</div><div>21</div><div>22</div><div>23</div><div>24</div>
+    <div class="sunday">25</div>
+    <div>26</div><div>27</div><div>28</div><div>29</div><div>30</div>
+  </div>
+</div>
+
+
+<!-- MAY 1982 -->
+<div class="calendar" tabindex="0">
+  <div class="month-header">MAY 1982</div>
+  <div class="month-title"></div>
+  <div class="weekdays">
+    <div>SUN</div><div>MON</div><div>TUE</div><div>WED</div><div>THU</div><div>FRI</div><div>SAT</div>
+  </div>
+  <div class="days">
+    <div></div><div></div><div></div><div></div><div></div><div></div>
+    <div>1</div>
+    <div class="sunday">2</div>
+    <div>3</div><div>4</div><div>5</div><div>6</div><div>7</div><div>8</div>
+    <div class="sunday">9</div>
+    <div>10</div><div>11</div><div>12</div><div>13</div><div>14</div><div>15</div>
+    <div class="sunday">16</div>
+    <div>17</div><div>18</div><div>19</div><div>20</div><div>21</div><div>22</div>
+    <div class="sunday">23</div>
+    <div>24</div><div>25</div><div>26</div><div>27</div><div>28</div><div>29</div>
+    <div class="sunday">30</div>
+        <div>31</a>
+    </div>
+  </div>
+</div>
+
+<!-- JUNE 1982 -->
+<div class="calendar" tabindex="0">
+  <div class="month-header">JUNE 1982</div>
+  <div class="weekdays">
+    <div>SUN</div><div>MON</div><div>TUE</div><div>WED</div><div>THU</div><div>FRI</div><div>SAT</div>
+  </div>
+  <div class="days">
+    <div></div><div></div><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div>
+    <div class="sunday">6</div>
+    <div>7</div><div>8</div><div>9</div><div>10</div><div>11</div><div>12</div>      
+    <div class="sunday">13</div>
+    <div>14</div><div>15</div>
+    <div>17</div><div>18</div><div>19</div>
+    <div>20</div>
+    <div class="sunday">21</div><div>22</div><div>23</div><div>24</div><div>25</div><div>26</div>
+    <div>27</div>
+    <div class="sunday">28</div><div>29</div><div>30</div>
+  </div>
+</div>
+
+<!-- JULY 1982 -->
+<div class="calendar" tabindex="0">
+  <div class="month-header">JULY 1982</div>
+  <div class="weekdays">
+    <div>SUN</div><div>MON</div><div>TUE</div><div>WED</div><div>THU</div><div>FRI</div><div>SAT</div>
+  </div>
+  <div class="days">
+    <div></div><div></div><div></div><div></div><div>1</div><div>2</div><div>3</div>
+    <div class="holiday" title="INDEPENDENCE DAY 1982"><a href="https://www.calendar-12.com/holidays/independence_day/1982" target="_blank">4</a></div>
+    <div>5</div><div>6</div><div>7</div><div>8</div><div>9</div><div>10</div>
+    <div class="sunday">11</div>
+    <div>12</div><div>13</div><div>14</div><div>15</div><div>16</div><div>17</div>
+    <div class="sunday">18</div>
+    <div>19</div><div>20</div><div>21</div><div>22</div><div>23</div><div>24</div>
+    <div class="sunday">25</div>
+    <div>26</div><div>27</div><div>28</div><div>29</div><div>30</div><div>31</div>
+  </div>
+</div>
+
+<!-- AUGUST 1982 -->
+<div class="calendar" tabindex="0">
+  <div class="month-header">AUGUST 1982</div>
+  <div class="weekdays">
+    <div>SUN</div><div>MON</div><div>TUE</div><div>WED</div><div>THU</div><div>FRI</div><div>SAT</div>
+  </div>
+  <div class="days">
+   <div class="sunday">1</div>
+    <div>2</div>
+    <div>3</div><div>4</div><div>5</div><div>6</div><div>7</div><div class="sunday">8</div>
+    <div>9</div>
+    <div>10</div><div>11</div><div>12</div><div>13</div><div>14</div><div class="sunday">15</div>
+    <div>16</div>
+    <div>17</div><div>18</div><div>19</div><div>20</div><div>21</div><div class="sunday">22</div>
+    <div>23</div>
+    <div>24</div><div>25</div><div>26</div><div>27</div><div>28</div><div class="sunday">29</div>
+    <div>30</div>
+    <div>31</div>
+  </div>
+</div>
+
+
+<!-- SEPTEMBER 1982 -->
+<div class="calendar" tabindex="0">
+  <div class="month-header">SEPTEMBER 1982</div>
+  <div class="weekdays">
+    <div>SUN</div><div>MON</div><div>TUE</div><div>WED</div><div>THU</div><div>FRI</div><div>SAT</div>
+  </div>
+  <div class="days">
+    <div></div><div></div><div></div><div>1</div><div>2</div><div>3</div><div>4</div>
+
+    <div class="sunday">5</div>
+    <div class="holiday" title="LABOR DAY 1982"><a href="https://www.calendar-12.com/holidays/labor_day/1982" target="_blank">6</a></div><div>7</div><div>8</div><div>9</div><div>10</div><div>11</div>
+
+    <div class="sunday">12</div>
+    <div>13</div><div>14</div><div>15</div><div>16</div><div>17</div><div>18</div>
+
+    <div class="sunday">19</div>
+    <div>20</div><div>21</div><div>22</div><div>23</div><div>24</div><div>25</div>
+
+    <div class="sunday">26</div>
+    <div>27</div><div>28</div><div>29</div><div>30</div>
+  </div>
+</div>
+
+<!-- OCTOBER 1982 -->
+<div class="calendar" tabindex="0">
+  <div class="month-header">OCTOBER 1982</div>
+  <div class="weekdays">
+    <div class="sunday">SUN</div>
+    <div>MON</div>
+    <div>TUE</div>
+    <div>WED</div>
+    <div>THU</div>
+    <div>FRI</div>
+    <div>SAT</div>
+  </div>
+  <div class="days">
+    <div></div><div></div><div></div><div></div><div></div><div>1</div><div>2</div>
+    <div class="sunday">3</div>
+    <div>4</div><div>5</div><div>6</div><div>7</div><div>8</div><div>9</div>
+    <div class="sunday">10</div>
+   <div>11</a></div><div>12</div><div>13</div><div>14</div><div>15</div><div>16</div>
+    <div class="sunday">17</div>
+    <div>18</div><div>19</div><div>20</div><div>21</div><div>22</div><div>23</div>
+    <div class="sunday">24</div>
+    <div>25</div><div>26</div><div>27</div><div>28</div><div>29</div><div>30</div>
+    <div class="sunday">31</div>
+  </div>
+</div>
+
+<!-- NOVEMBER 1982 -->
+<div class="calendar" tabindex="0">
+  <div class="month-header">NOVEMBER 1982</div>
+  <div class="weekdays">
+    <div class="sunday">SUN</div>
+    <div>MON</div>
+    <div>TUE</div>
+    <div>WED</div>
+    <div>THU</div>
+    <div>FRI</div>
+    <div>SAT</div>
+  </div>
+  <div class="days">
+    <div></div>
+    <div class="holiday" title="ALL SAINTS DAY 1982"> <a href="https://www.calendar-12.com/holidays/all_saints_day/1982" target="_blank">1</a></div>
+    <div>2</div><div>3</div><div>4</div><div>5</div><div>6</div>
+    <div class="sunday">7</div>
+    <div>8</div><div>9</div><div>10</div><div>11</a></div><div>12</div><div>13</div>
+    <div class="sunday">14</div>
+    <div>15</div><div>16</div><div>17</div><div>18</div><div>19</div><div>20</div>
+    <div class="sunday">21</div>
+    <div>22</div><div>23</div><div>24</div><div class="holiday" title="THANKSGIVING 1982"> <a href="https://www.calendar-12.com/holidays/thanksgiving/1982" target="_blank">25</a></div><div>26</div><div>27</div>
+    <div class="sunday">28</div>
+    <div>29</div>
+   <div>30</div>
+  </div>
+</div>
+
+<!-- DECEMBER 1982 -->
+<div class="calendar" tabindex="0">
+  <div class="month-header">DECEMBER 1982</div>
+  <div class="weekdays">
+    <div class="sunday">SUN</div>
+    <div>MON</div>
+    <div>TUE</div>
+    <div>WED</div>
+    <div>THU</div>
+    <div>FRI</div>
+    <div>SAT</div>
+  </div>
+  <div class="days">
+    <div></div><div></div><div></div><div>1</div><div>2</div><div>3</div><div>4</div>
+    <div class="sunday">5</div>
+    <div>6</div><div>7</div><div>8</div><div>9</div><div>10</div><div>11</div>
+    <div class="sunday">12</div>
+    <div>13</div><div>14</div><div>15</div><div>16</div><div>17</div><div>18</div>
+    <div class="sunday">19</div>
+    <div>20</div><div>21</div><div>22</div><div>23</div><div>24</div>
+    <div class="holiday" title="CHRISTMAS DAY 1982"> <a href="https://www.calendar-12.com/holidays/christmas/1982" target="_blank">25</a></div>
+    <div class="sunday">26</div>
+    <div>27</div><div>28</div><div>29</div>
+    <div class="holiday" title="RIZAL DAY 1982"><a href="https://en.wikipedia.org/wiki/Rizal_Day" target="_blank">30</a></div>
+    <div class="holiday" title="NEW YEAR 1982"><a href="https://www.calendar-12.com/holidays/new_years_eve/1982" target="_blank">31</a>
+    </div>
+  </div>
+</div>
+
+<body>
+</html>
